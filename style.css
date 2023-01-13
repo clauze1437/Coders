@@ -9,13 +9,6 @@ html, body {
     margin: 0;
 }
 
-#dummy {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    left: 100px;
-}
 
 h1 {
     font-weight: 700;
@@ -178,7 +171,7 @@ nav > a:hover {
 
 .service-bottom {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 128px;
     margin-top: 72px;
 }
@@ -325,6 +318,12 @@ footer p {
 .social-icon {
     display: flex;
     gap: 32px;
+}
+
+@media only screen and (min-width: 992px) {
+    .service-bottom {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media only screen and (max-width: 1200px) {
